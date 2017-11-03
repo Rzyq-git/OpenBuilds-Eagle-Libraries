@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -224,11 +224,11 @@
 <vertex x="6.5" y="-6.5" curve="-90"/>
 <vertex x="-6.5" y="-6.5" curve="-90"/>
 </polygon>
-<pad name="UP" x="-16.5" y="19.5" drill="0.35"/>
-<pad name="LEFT" x="-19.5" y="-16.5" drill="0.35"/>
-<pad name="BOTTOM" x="16.5" y="-19.5" drill="0.35"/>
-<pad name="RIGHT" x="19.5" y="16.5" drill="0.35"/>
-<pad name="ENTER" x="0" y="0" drill="0.35"/>
+<pad name="UP" x="-16.5" y="19.5" drill="0.35" stop="no" thermals="no"/>
+<pad name="LEFT" x="-19.5" y="-16.5" drill="0.35" stop="no" thermals="no"/>
+<pad name="BOTTOM" x="16.5" y="-19.5" drill="0.35" stop="no" thermals="no"/>
+<pad name="RIGHT" x="19.5" y="16.5" drill="0.35" stop="no" thermals="no"/>
+<pad name="ENTER" x="0" y="0" drill="0.35" stop="no" thermals="no"/>
 <polygon width="0.254" layer="43">
 <vertex x="-21" y="21" curve="90"/>
 <vertex x="-21" y="-21" curve="90"/>
@@ -249,7 +249,7 @@
 <vertex x="8" y="-8" curve="-90"/>
 <vertex x="-8" y="-8" curve="-90"/>
 </polygon>
-<pad name="PAD" x="0" y="0" drill="0.35"/>
+<pad name="PAD" x="0" y="0" drill="0.35" stop="no" thermals="no"/>
 <circle x="0" y="0" radius="12.824975" width="2.54" layer="41"/>
 <circle x="0" y="0" radius="11.5" width="0.3048" layer="21"/>
 </package>
@@ -260,7 +260,7 @@
 <vertex x="9" y="-9"/>
 <vertex x="-9" y="-9" curve="-180"/>
 </polygon>
-<pad name="PAD" x="0" y="0" drill="0.35"/>
+<pad name="PAD" x="0" y="0" drill="0.35" stop="no" thermals="no"/>
 <wire x1="9" y1="10" x2="9" y2="-10" width="2.54" layer="41" curve="-180"/>
 <wire x1="-9" y1="-10" x2="-9" y2="10" width="2.54" layer="41" curve="-180"/>
 <wire x1="-9" y1="10" x2="9" y2="10" width="2.54" layer="41"/>
@@ -286,7 +286,7 @@
 <vertex x="4" y="-4" curve="90"/>
 <vertex x="4" y="4" curve="90"/>
 </polygon>
-<pad name="PAD" x="0" y="0" drill="0.35"/>
+<pad name="PAD" x="0" y="0" drill="0.35" stop="no" thermals="no"/>
 <circle x="0" y="0" radius="5.95" width="0.3048" layer="21"/>
 </package>
 <package name="CAPTOUCH4WAY">
@@ -350,10 +350,10 @@
 <wire x1="-11.5" y1="9.502" x2="-11.5" y2="-9.498" width="0.3048" layer="21" curve="83.023638"/>
 <wire x1="-11.5" y1="-9.498" x2="-11" y2="-9.498" width="0.3048" layer="21" curve="106.260205"/>
 <wire x1="-11" y1="-9.498" x2="-3.2" y2="-1.598" width="0.3048" layer="21"/>
-<pad name="LEFT" x="-11.3" y="9.2" drill="0.35"/>
-<pad name="DOWN" x="-9.2" y="-11.2" drill="0.35"/>
-<pad name="RIGHT" x="11.2" y="-9.2" drill="0.35"/>
-<pad name="UP" x="9.2" y="11.2" drill="0.35"/>
+<pad name="LEFT" x="-11.3" y="9.2" drill="0.35" stop="no" thermals="no"/>
+<pad name="DOWN" x="-9.2" y="-11.2" drill="0.35" stop="no" thermals="no"/>
+<pad name="RIGHT" x="11.2" y="-9.2" drill="0.35" stop="no" thermals="no"/>
+<pad name="UP" x="9.2" y="11.2" drill="0.35" stop="no" thermals="no"/>
 </package>
 <package name="CAPTOUCH4WAY-40MM">
 <wire x1="-15" y1="15.002" x2="15" y2="-14.998" width="2" layer="41"/>
@@ -415,10 +415,10 @@
 <wire x1="-15.5" y1="13.502" x2="-15.5" y2="-13.498" width="0.3048" layer="21" curve="83.023638"/>
 <wire x1="-15.5" y1="-13.498" x2="-15" y2="-13.498" width="0.3048" layer="21" curve="106.260205"/>
 <wire x1="-15" y1="-13.498" x2="-5.2" y2="-3.598" width="0.3048" layer="21"/>
-<pad name="LEFT" x="-15.3" y="13.2" drill="0.35"/>
-<pad name="DOWN" x="-13.2" y="-15.2" drill="0.35"/>
-<pad name="RIGHT" x="15.2" y="-13.2" drill="0.35"/>
-<pad name="UP" x="13.2" y="15.2" drill="0.35"/>
+<pad name="LEFT" x="-15.3" y="13.2" drill="0.35" stop="no" thermals="no"/>
+<pad name="DOWN" x="-13.2" y="-15.2" drill="0.35" stop="no" thermals="no"/>
+<pad name="RIGHT" x="15.2" y="-13.2" drill="0.35" stop="no" thermals="no"/>
+<pad name="UP" x="13.2" y="15.2" drill="0.35" stop="no" thermals="no"/>
 <circle x="0" y="0" radius="4.909175" width="2.54" layer="41"/>
 <circle x="0" y="0" radius="2.40831875" width="2.54" layer="41"/>
 </package>
@@ -439,8 +439,8 @@
 <vertex x="17" y="6.5" curve="-90"/>
 <vertex x="18" y="5.5"/>
 </polygon>
-<pad name="LEFT" x="-16.4" y="-4.9" drill="0.35"/>
-<pad name="RIGHT" x="1.5" y="-5.5" drill="0.35"/>
+<pad name="LEFT" x="-16.4" y="-4.9" drill="0.35" stop="no" thermals="no"/>
+<pad name="RIGHT" x="1.5" y="-5.5" drill="0.35" stop="no" thermals="no"/>
 <polygon width="0.1" layer="1">
 <vertex x="-0.11" y="-9.5" curve="90"/>
 <vertex x="-1.11" y="-10.5"/>
@@ -461,8 +461,8 @@
 <vertex x="-5.5" y="-19.5" curve="90"/>
 <vertex x="-4.5" y="-18.5"/>
 </polygon>
-<pad name="ENTER" x="0" y="-10.6" drill="0.35"/>
-<pad name="BACK" x="-16.4" y="-10.6" drill="0.35"/>
+<pad name="ENTER" x="0" y="-10.6" drill="0.35" stop="no" thermals="no"/>
+<pad name="BACK" x="-16.4" y="-10.6" drill="0.35" stop="no" thermals="no"/>
 <wire x1="-16.5" y1="6.5" x2="-17.5" y2="5.5" width="0.3048" layer="21" curve="90"/>
 <wire x1="-17.5" y1="5.5" x2="-17.5" y2="-5" width="0.3048" layer="21"/>
 <wire x1="-17.5" y1="-5" x2="-16.5" y2="-6" width="0.3048" layer="21" curve="90"/>
@@ -541,7 +541,7 @@
 <vertex x="6" y="4.74" curve="90"/>
 <vertex x="5" y="5.74"/>
 </polygon>
-<pad name="ENTER" x="5.081" y="5.348" drill="0.35"/>
+<pad name="ENTER" x="5.081" y="5.348" drill="0.35" stop="no" thermals="no"/>
 <wire x1="-5" y1="5.74" x2="-6" y2="4.74" width="0.3048" layer="21" curve="90"/>
 <wire x1="5" y1="-4.26" x2="6" y2="-3.26" width="0.3048" layer="21" curve="90"/>
 <wire x1="6" y1="4.74" x2="5" y2="5.74" width="0.3048" layer="21" curve="90"/>
@@ -570,7 +570,7 @@
 <wire x1="4" y1="-4" x2="-4" y2="-4" width="0.254" layer="21"/>
 <wire x1="-4" y1="-4" x2="-5" y2="-3" width="0.254" layer="21" curve="-90"/>
 <wire x1="-5" y1="-3" x2="-5" y2="3" width="0.254" layer="21"/>
-<pad name="FUNC_KEY" x="-4" y="3" drill="0.35"/>
+<pad name="FUNC_KEY" x="-4" y="3" drill="0.35" stop="no" thermals="no"/>
 </package>
 <package name="CAPTOUCH_ESTOP">
 <polygon width="0.127" layer="1">
@@ -580,7 +580,7 @@
 <vertex x="0" y="-8" curve="-90"/>
 </polygon>
 <circle x="0" y="0" radius="8" width="0.3048" layer="21"/>
-<pad name="1" x="0" y="7.62" drill="0.35"/>
+<pad name="1" x="0" y="7.62" drill="0.35" stop="no" thermals="no"/>
 </package>
 </packages>
 <symbols>
