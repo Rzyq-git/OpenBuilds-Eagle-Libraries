@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -74,20 +74,14 @@
 <library>
 <packages>
 <package name="AUTOMOTIVERELAY40A">
-<wire x1="-14" y1="12" x2="-14" y2="-16" width="0.127" layer="21"/>
-<wire x1="-14" y1="-16" x2="-11" y2="-16" width="0.127" layer="21"/>
-<wire x1="-11" y1="-16" x2="11" y2="-16" width="0.127" layer="21"/>
-<wire x1="11" y1="-16" x2="14" y2="-16" width="0.127" layer="21"/>
-<wire x1="14" y1="-16" x2="14" y2="12" width="0.127" layer="21"/>
-<wire x1="14" y1="12" x2="-14" y2="12" width="0.127" layer="21"/>
+<wire x1="-14" y1="11" x2="-14" y2="-15" width="0.127" layer="21"/>
+<wire x1="-13" y1="-16" x2="13" y2="-16" width="0.127" layer="21"/>
+<wire x1="14" y1="-15" x2="14" y2="11" width="0.127" layer="21"/>
+<wire x1="13" y1="12" x2="-13" y2="12" width="0.127" layer="21"/>
 <wire x1="-8.5" y1="3.2" x2="-8.5" y2="-3.2" width="0.8128" layer="21"/>
 <wire x1="8.5" y1="3.2" x2="8.5" y2="-3.2" width="0.8128" layer="21"/>
 <wire x1="-3.2" y1="8" x2="3.2" y2="8" width="0.8128" layer="21"/>
 <wire x1="0" y1="-6.8" x2="0" y2="-13.2" width="0.8128" layer="21"/>
-<pad name="85" x="-7.62" y="0" drill="0.6" shape="long" rot="R90"/>
-<pad name="86" x="7.62" y="0" drill="0.6" shape="long" rot="R90"/>
-<pad name="87" x="0" y="8.89" drill="0.6" shape="long" rot="R180"/>
-<pad name="30" x="0" y="-10.16" drill="0.6" shape="long" rot="R270"/>
 <text x="0" y="6.5" size="1.27" layer="21" align="center">87</text>
 <text x="10" y="0" size="1.27" layer="21" rot="R90" align="center">86</text>
 <text x="-10" y="0" size="1.27" layer="21" rot="R90" align="center">85</text>
@@ -111,11 +105,23 @@
 <wire x1="-2.7" y1="0.7" x2="-2.4" y2="-1" width="0.254" layer="21" curve="-95.710593"/>
 <wire x1="-2.4" y1="-1" x2="-1.9" y2="0.7" width="0.254" layer="21" curve="-95.710593"/>
 <wire x1="-1.9" y1="0.7" x2="-1.6" y2="-0.1" width="0.254" layer="21" curve="-24.237363"/>
-<wire x1="-11" y1="-16" x2="-11" y2="-15" width="0.254" layer="21"/>
 <wire x1="-11" y1="-15" x2="11" y2="-15" width="0.254" layer="21"/>
-<wire x1="11" y1="-15" x2="11" y2="-16" width="0.254" layer="21"/>
 <text x="-12.7" y="-12.7" size="1.778" layer="25">&gt;Name</text>
 <text x="3.81" y="-12.7" size="1.778" layer="27">&gt;Value</text>
+<pad name="85-1" x="-7.62" y="2.25" drill="2.5" rot="R90"/>
+<pad name="85-2" x="-7.62" y="-2.25" drill="2.5" rot="R90"/>
+<pad name="86-1" x="7.62" y="2.25" drill="2.5" rot="R90"/>
+<pad name="86-2" x="7.62" y="-2.25" drill="2.5" rot="R90"/>
+<pad name="30-1" x="-0.8" y="-7.91" drill="2.5" rot="R270"/>
+<pad name="30-2" x="-0.8" y="-12.41" drill="2.5" rot="R270"/>
+<pad name="87-1" x="-2.25" y="8.89" drill="2.5" rot="R180"/>
+<pad name="87-2" x="2.25" y="8.89" drill="2.5" rot="R180"/>
+<wire x1="-14" y1="11" x2="-13" y2="12" width="0.127" layer="21" curve="-90"/>
+<wire x1="13" y1="12" x2="14" y2="11" width="0.127" layer="21" curve="-90"/>
+<wire x1="14" y1="-15" x2="13" y2="-16" width="0.127" layer="21" curve="-90"/>
+<wire x1="-13" y1="-16" x2="-14" y2="-15" width="0.127" layer="21" curve="-90"/>
+<wire x1="11" y1="-15" x2="11" y2="-15.8" width="0.254" layer="21"/>
+<wire x1="-11" y1="-15" x2="-11" y2="-15.8" width="0.254" layer="21"/>
 </package>
 <package name="PCB-6.35MM-RA-SPADE">
 <pad name="P$1" x="0" y="2.5" drill="1.2" shape="long" rot="R90"/>
@@ -183,10 +189,10 @@
 <devices>
 <device name="" package="AUTOMOTIVERELAY40A">
 <connects>
-<connect gate="G$1" pin="30" pad="30"/>
-<connect gate="G$1" pin="85" pad="85"/>
-<connect gate="G$1" pin="86" pad="86"/>
-<connect gate="G$1" pin="87" pad="87"/>
+<connect gate="G$1" pin="30" pad="30-1 30-2"/>
+<connect gate="G$1" pin="85" pad="85-1 85-2"/>
+<connect gate="G$1" pin="86" pad="86-1 86-2"/>
+<connect gate="G$1" pin="87" pad="87-1 87-2"/>
 </connects>
 <technologies>
 <technology name=""/>
